@@ -1,10 +1,13 @@
 package com.endava.internship.service;
 
+import static java.util.Arrays.asList;
+import static java.util.Collections.emptyList;
+import static java.util.Collections.singletonList;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.entry;
 
 import com.endava.internship.domain.Privilege;
 import com.endava.internship.domain.User;
-import com.endava.internship.service.UserService;
-import com.endava.internship.service.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -12,11 +15,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.function.Predicate;
 
-import static java.util.Arrays.asList;
-import static java.util.Collections.emptyList;
-import static java.util.Collections.singletonList;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.entry;
 
 @SuppressWarnings("unchecked")
 public class UserServiceImplTest {
